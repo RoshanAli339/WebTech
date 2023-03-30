@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timeStyle1.css">
+    <title>Time Table</title>
+</head>
+<body>
+    <h1>TIME TABLE</h1>
+    <div class="container">
+        <table class="first">
+            <caption>II/IV 2nd Sem CSE-C</caption>
+            <thead>
+                <tr>
+                    <th>Day/Time</th>
+                    <th>08:00-09:00</th>
+                    <th>09:00-10:00</th>
+                    <th>10:00-11:00</th>
+                    <th>11:00-12:00</th>
+                    <th>12:00-01:00</th>
+                    <th>01:00-02:00</th>
+                    <th>02:00-03:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Mon</th>
+                    <td class="ethics">E&H</td>
+                    <td class="cs">CS</td>
+                    <td class="dbms">DBMS</td>
+                    <td rowspan="6">L <br>U <br>N <br>C <br> H</td>
+                    <td class="os">OS</td>
+                    <td class="wt">WT</td>
+                    <td class="se">SE</td>
+                </tr>
+                <tr>
+                    <th>Tues</th>
+                    <td class="os">OS</td>
+                    <td class="wt">WT</td>
+                    <td class="cs">CS</td>
+                    <td colspan="3" id="wtlab">WT LAB(ACC)</td>
+                </tr>
+                <tr>
+                    <th>Wed</th>
+                    <td colspan="3" id="dbmslab">DBMS Lab (ACC)</td>
+                    <td class="cs">CS</td>
+                    <td class="se">SE</td>
+                    <td class="dbms">DBMS</td>
+                </tr>
+                <tr>
+                    <th>Thurs</th>
+                    <td colspan="2" class="soc">SOC Lab (E-Learning)</td>
+                    <td class="wt">WT</td>
+                    <td class="dbms">DBMS</td>
+                    <td class="se">SE</td>
+                    <td class="ethics">E&H</td>
+                </tr>
+                <tr>
+                    <th>Fri</th>
+                    <td class="soc">SOC</td>
+                    <td class="os">OS</td>
+                    <td class="wt">WT</td>
+                    <td colspan="3" id="cslab">CS Lab (ACC)</td>
+                </tr>
+                <tr>
+                    <th>Sat</th>
+                    <td colspan="2" id="cclab">CC Lab (ACC)</td>
+                    <td class="soc">SOC</td>
+                    <td class="os">OS</td>
+                    <td class="cs">CS</td>
+                    <td class="dbms">DBMS</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="teacher">
+        <p class="subj"></p>
+        <p class="prof"></p>
+    </div>
+    <script src="timeScript1.js"></script>
+</body>
+</html>
