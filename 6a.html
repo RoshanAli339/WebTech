@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        html, body
+        {
+            width: 100%;
+            height: 100%;
+        }
+        table
+        {
+            width: 1000px;
+            height: 500px;
+            text-align: center;
+        }
+        button
+        {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">TIME TABLE</h1>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>DAY</th>
+                <th>08:00-09:00</th>
+                <th>09:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-01:00</th>
+                <th>01:00-02:00</th>
+                <th>02:00-03:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>MON</th>
+                <td>E&H</td>
+                <td> <button onClick="showCS">CS</button></td>
+                <td>DBMS</td>
+                <td rowspan="6">L <br> U <br> N <br> C <br> H</td>
+                <td>OS</td>
+                <td>WT</td>
+                <td>SE</td>
+            </tr>
+            <tr>
+                <th>TUE</th>
+                <td>OS</td>
+                <td>WT</td>
+                <td>CS</td>
+                <td colspan="3">WT LAB (ACC)</td>
+            </tr>
+            <tr>
+                <th>WED</th>
+                <td colspan="3">DBMS LAB (ACC)</td>
+                <td >CS</td>
+                <td>SE</td>
+                <td>DBMS</td>
+            </tr>
+            <tr>
+                <th>THU</th>
+                <td colspan="2">SOC LAB (E-learning)</td>
+                <td>WT</td>
+                <td>DBMS</td>
+                <td>SE</td>
+                <td>E&H</td>
+            </tr>
+            <tr>
+                <th>FRI</th>
+                <td>SOC</td>
+                <td>OS</td>
+                <td>WT</td>
+                <td colspan="3">CC LAB (ACC)</td>
+            </tr>
+            <tr>
+                <th>SAT</th>
+                <td colspan="2">CC (E-learning)</td>
+                <td>SOC</td>
+                <td>OS</td>
+                <td >CS</td>
+                <td>DBMS</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <p id="subj"></p>
+        <p id="prof"></p>
+    </div>
+    <script>
+        function showCS()
+        {
+            document.querySelector("#prof").textContent = "Dr. B. Srinivasarao"
+            console.log("hello");
+            document.querySelector("#subj").textContent = "Computational Statistics"
+        }
+    </script>
+</body>
+</html>
