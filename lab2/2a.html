@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reverse number</title>
+	</head>
+	<body>
+		<script>
+			var num = parseInt(window.prompt("Enter a number: "));
+			var dup = num;
+			var rev = 0;
+			while (dup)
+			{
+				rev = (rev*10) + (dup%10);
+				dup = Math.floor(dup/10);
+			}
+			document.writeln("<h3>Reverse of " + num + " is: " + rev);
+		</script>
+	</body>
+</html>
