@@ -1,18 +1,18 @@
 <html>
     <head>
-        <title>Sum of digits</title>
+        <title>Reverse number</title>
     </head>
     <body>
         <script>
             var n = parseInt(prompt("Enter a number: "))
             var dup = n
-            var sum = 0
+            var rev = 0
             while (dup)
             {
-                sum += dup%10
+                rev = (rev * 10) + (dup % 10)
                 dup = Math.floor(dup/10)
             }
-            document.writeln("Sum of digits of "+n+" is: "+sum)
+            document.writeln("Reverse of "+n+" is: " + rev)
         </script>
     </body>
 </html>

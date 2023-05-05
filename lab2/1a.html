@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Leap year</title>
+    </head>
+    <body>
+        <script>
+            var yr = parseInt(prompt("Enter a year: "))
+            if ((yr % 4 == 0 && yr % 100 != 0) || (yr % 400 == 0))
+            {
+                document.writeln(yr+" is a leap year")
+            }
+            else
+            {
+                document.writeln(yr+" is not a leap year")
+            }
+        </script>
+    </body>
+</html>

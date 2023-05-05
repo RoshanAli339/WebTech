@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Arithmetic operations</title>
+    </head>
+    <body>
+        <script>
+            var n1 = parseInt(prompt("Enter first operand: "))
+            var op = prompt("Enter operator: ")
+            var n2 = parseInt(prompt("Enter second operand: "))
+
+            switch(op){
+                case '+':
+                    document.writeln("Sum= " + (n1+n2))
+                    break
+                case '-':
+                    document.writeln("Difference= " + (n1-n2))
+                    break
+                case '*':
+                    document.writeln("Product= " + (n1*n2))
+                    break
+                case '/':
+                    document.writeln("Quotient= " + (n1/n2))
+                    break
+                case '%':
+                    document.writeln("Remainder= " + (n1%n2))
+                    break
+                default:
+                    document.writeln("Invalid operator")
+            }
+        </script>
+    </body>
+</html>
