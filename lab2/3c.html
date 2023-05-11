@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Random Image Picker</title>
+    </head>
+    <body>
+        <img src="empty.png" id="image" alt="empty image" width="200" height="200">
+        <button id="btn">Roll</button>
+        <script>
+            document.querySelector("#btn").addEventListener("click",() =>{
+                const img = document.querySelector("#image")
+                var index = Math.floor(1+Math.random()*6)
+                img.setAttribute("src", "dice"+index+".png")
+            })
+        </script>
+    </body>
+</html>

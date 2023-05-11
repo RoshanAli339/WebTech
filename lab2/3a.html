@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <script>
+            function gcd(x, y)
+            {
+                if (!y)
+                    return x
+                else
+                    return gcd(y, x%y)
+            }
+            function reverse(x)
+            {
+                var dup = x
+                var rev = 0
+                while (dup){
+                    rev = (rev*10) + (dup%10)
+                    dup = Math.floor(dup/10)
+                }
+                return rev
+            }
+            function randomNumber()
+            {
+                return Math.floor(Math.random()*100)
+            }
+        </script>
+    </body>
+</html>
