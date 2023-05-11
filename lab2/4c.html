@@ -3,15 +3,64 @@
         <title>Matrices</title>
     </head>
     <body>
+        <h3>Matrix 1:</h3>
+        <table id="mat1"></table>
+        <h3>Matrix 2:</h3>
+        <table id="mat2"></table> <br>
+        <button id="add">Addition</button>
+        <button id="multiply">Multiplication</button>
+        <table id="output"></table>
         <script>
-            function addition(mat1, mat2)
+            function printMatrix(matObj, mat){
+                var content = ""
+                for (let i = 0; i < mat.length; ++i)
+                {
+                    content += "<tr>"
+                    for (let j = 0; j < mat[1].length; ++j)
+                        content += "<td>"+mat[i][j]+"</td>"
+                    content += "</tr>"
+                }
+                matObj.innerHTML = content
+            }
+            function addition()
             {
+                const out = document.querySelector("#output");
+                var mat3 = []
                 for(let i=0; i<mat1.length; ++i)
                 {
+                    let temp = []
                     for(let  j =0; j < mat1[i].length; ++j)
-                        document.writeln(mat1[i][j]+mat2[i][j])
+                        temp.push(mat1[i][j]+mat2[i][j])
+                    mat3.push(temp)
                 }
+                printMatrix(out, mat3)
             }
+            function multiplication(){
+                const out = document.getElementById("output");
+                var mat3 = []
+                for (let i = 0; i < mat1.length; ++i){
+                    var temp = []
+                    for (let j = 0; j < mat1[i].length; ++j){
+                        var res = 0
+                        for (let k = 0; k < mat2.length; ++k){
+                            res += mat1[i][j] * mat2[j][i]
+                        }
+                        temp.push(res)
+                    }
+                    mat3.push(temp)
+                }
+                printMatrix(out, mat3)
+            }
+            const mat1 = [[1,2,3],
+                          [4,5,6],
+                          [7,8,9]]
+            const mat2 = [[11,12,13],
+                          [14,15,16],
+                          [17,18,19]]
+            printMatrix(document.getElementById("mat1"), mat1)
+            printMatrix(document.getElementById("mat2"), mat2)
+            document.getElementById("add").addEventListener("click", addition)
+            document.getElementById("multiply").addEventListener("click", multiplication)
         </script>
     </body>
 </html>
