@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Form events
+        </title>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" name="" id="textbox" onfocus="focused(this)" onblur="blurred(this)">
+            <select name="" id="city" onchange="changed()">
+                <option>Select</option>
+                <option>Guntur</option>
+                <option>Vijayawada</option>
+                <option>Vizag</option>
+            </select>
+        </form>
+    </body>
+    <script>
+        function changed(){
+            alert("Option changed")
+        }
+        function focused(box){
+            box.style.background = "magenta";
+            box.style.color = "yellow";
+        }
+        function blurred(box){
+            box.value = box.value.toUpperCase();
+        }
+    </script>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+    <body>
+        <p id="text1" onclick="clicked(this)">Hello World</p>
+        <span id="text2" onmouseover="mouseOver(this)">Web Development</span>
+        <br>
+        <img src="dice3.png" alt="" width="100" height="100" onmousedown="donwn()" onmouseup="up()">
+        <img src="dice4.png" alt="" width="100" height="100" onmousemove="moving()">
+        <p id="out"></p>
+    </body>
+    <script>
+        function clicked(text){
+            text.style.fontSize = "50px"
+        }
+
+        function mouseOver(text){
+            text.style.color = "blue"
+            text.style.fontFamily = "Times New Roman"
+        }
+
+        function down(){
+            document.querySelector("#out").innerHTML = "Mouse Down"
+        }
+
+        function up(){
+            document.querySelector("#out").innerHTML = "Mouse released"
+        }
+
+        function moving(){
+            document.querySelector("#out").innerHTML = "Mouse moving"
+        }
+    </script>
+</html>

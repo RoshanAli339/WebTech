@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Event Bubbling</title>
+  </head>
+  <body>
+    <h2>Bubbling Event in Javascript</h2>
+
+    <div id="parent" onclick="clickedParent()">
+      <button>
+        <h2>Parent</h2>
+      </button>
+      <button id="child" onclick="clickedChild()">
+        <p>Child</p>
+      </button>
+    </div>
+    <br />
+
+    <script>
+        function clickedChild(){
+            alert("You clicked the child")
+        }
+
+        function clickedParent(){
+            alert("You clicked the parent")
+        }
+    </script>
+  </body>
+</html>
