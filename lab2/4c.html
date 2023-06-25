@@ -43,7 +43,7 @@
                     for (let j = 0; j < mat1[i].length; ++j){
                         var res = 0
                         for (let k = 0; k < mat2.length; ++k){
-                            res += mat1[i][j] * mat2[j][i]
+                            res += mat1[i][k] * mat2[k][j]
                         }
                         temp.push(res)
                     }

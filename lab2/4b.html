@@ -7,10 +7,10 @@
             function binarySearch(arr, key)
             {
                 var l = 0, r = arr.length-1, mid = 0
-                while (l < r)
+                while (l <= r)
                 {
                     mid = Math.floor((l+r)/2)
-                    if (arr[mid] == key)
+                    if (arr[mid] === key)
                         return mid
                     else if (arr[mid]<key)
                         l = mid+1
@@ -19,7 +19,13 @@
                 }
                 return -1
             }
-
+            var arr = [4, 5, 6, 12, 28, 34, 54]
+            var num = parseInt(prompt("Enter a number to search: "))
+            var index = binarySearch(arr, num)
+            if (index !== -1)
+                document.writeln(num+" is found at index " + index + " in the given array")
+            else
+                document.writeln(num + " is not found in the given array")
         </script>
     </body>
 </html>
