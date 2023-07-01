@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student[
+    <!ELEMENT student (name, rollno, year, college)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT rollno (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT college (#PCDATA)>
+]>
+
+<student>
+    <name>Shaik Roshan Ali</name>
+    <rollno>Y21CS160</rollno>
+    <year>II/IV BTech</year>
+    <college>RVR&amp;JCCE</college>
+</student>
